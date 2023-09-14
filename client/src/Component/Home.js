@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // Assets
 import BlockchainCredentialsImage from "../Images/blockchain_credentials.png";
+
 // External Components
 import {
   Paper,

@@ -5,14 +5,23 @@ import "./App.css";
 // Nav
 import NavBarInstitute from "./Components/NavBarInstitute";
 import NavBarSysAdmin from "./Components/NavBarSysAdmin";
-import NavBarLanding from "./Components/NavBarLanding";
-
+import NavBarLanding from "./Component/NavBarLanding";
+import Test from "./Component/Test";
 // Pages
 import Home from "./Components/Home";
 import Admin from "./Components/Admin";
 import GenerateCert from "./Components/GenerateCert";
 import CertificateDisplay from "./Components/CertificateDisplay";
 import ViewCert from "./Components/ViewCert";
+import {
+  Route,
+  Routes,
+  Link,
+  Outlet,
+  Navigate,
+  useLocation,
+} from 'react-router-dom';
+
 
 // const DynamicLayoutRoute = (props) => {
 //   const { component: RoutedComponent, layout, ...rest } = props;
@@ -89,33 +98,20 @@ import ViewCert from "./Components/ViewCert";
 // }
 
 
-import {
-  Route,
-  Routes,
-  Link,
-  Outlet,
-  Navigate,
-} from 'react-router-dom';
 
 
 const App = () => {
+
   return (
       <div className="App" style={{ backgroundColor: "#fafafa" }}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/admin">Admin</Link>
-            </li>
-            <li>
-              <Link to="/institute">Institute</Link>
-            </li>
-          </ul>
-        </nav>
+        <NavBarLanding/>
         <Routes>
-          <Route exact path="/" Component={Home} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/admin" element={<Admin />} />
+        <Route exact path="/institute" element={<GenerateCert />} />
+        <Route exact path="/view" element={<ViewCert />} />
+        <Route exact path="/certificate/:id" element={<CertificateDisplay />} />
+
         </Routes>
       </div>
   );
