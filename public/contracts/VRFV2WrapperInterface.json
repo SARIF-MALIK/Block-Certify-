@@ -1,0 +1,425 @@
+{
+  "contractName": "VRFV2WrapperInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "lastRequestId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "_callbackGasLimit",
+          "type": "uint32"
+        }
+      ],
+      "name": "calculateRequestPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "_callbackGasLimit",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_requestGasPriceWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "estimateRequestPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_callbackGasLimit\",\"type\":\"uint32\"}],\"name\":\"calculateRequestPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_callbackGasLimit\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"_requestGasPriceWei\",\"type\":\"uint256\"}],\"name\":\"estimateRequestPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastRequestId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculateRequestPrice(uint32)\":{\"details\":\"This function relies on the transaction gas price which is not automatically set duringsimulation. To estimate the price at a specific gas price, use the estimatePrice function.\",\"params\":{\"_callbackGasLimit\":\"is the gas limit used to estimate the price.\"}},\"estimateRequestPrice(uint32,uint256)\":{\"details\":\"This is a convenience function that can be called in simulation to better understandpricing.\",\"params\":{\"_callbackGasLimit\":\"is the gas limit used to estimate the price.\",\"_requestGasPriceWei\":\"is the gas price in wei used for the estimation.\"}},\"lastRequestId()\":{\"returns\":{\"_0\":\"the request ID of the most recent VRF V2 request made by this wrapper. This should only be relied option within the same transaction that the request was made.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"calculateRequestPrice(uint32)\":{\"notice\":\"Calculates the price of a VRF request with the given callbackGasLimit at the currentblock.\"},\"estimateRequestPrice(uint32,uint256)\":{\"notice\":\"Estimates the price of a VRF request with a specific gas limit and gas price.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@chainlink/contracts/src/v0.8/interfaces/VRFV2WrapperInterface.sol\":\"VRFV2WrapperInterface\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@chainlink/contracts/src/v0.8/interfaces/VRFV2WrapperInterface.sol\":{\"keccak256\":\"0x44f6fa0cb1867a0bc137a195d4603bafa1cf74ecfbe69eb82a5dabeca8957738\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87ebb29c09566ab02ff62c3c29f60a08db52f032b5f2c5220cd111aad88002ce\",\"dweb:/ipfs/QmfScq3oJ6MkPXJh5JUrpz93bNMJ3ebtLcE3Q1H2DUNi93\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface VRFV2WrapperInterface {\n  /**\n   * @return the request ID of the most recent VRF V2 request made by this wrapper. This should only\n   * be relied option within the same transaction that the request was made.\n   */\n  function lastRequestId() external view returns (uint256);\n\n  /**\n   * @notice Calculates the price of a VRF request with the given callbackGasLimit at the current\n   * @notice block.\n   *\n   * @dev This function relies on the transaction gas price which is not automatically set during\n   * @dev simulation. To estimate the price at a specific gas price, use the estimatePrice function.\n   *\n   * @param _callbackGasLimit is the gas limit used to estimate the price.\n   */\n  function calculateRequestPrice(uint32 _callbackGasLimit) external view returns (uint256);\n\n  /**\n   * @notice Estimates the price of a VRF request with a specific gas limit and gas price.\n   *\n   * @dev This is a convenience function that can be called in simulation to better understand\n   * @dev pricing.\n   *\n   * @param _callbackGasLimit is the gas limit used to estimate the price.\n   * @param _requestGasPriceWei is the gas price in wei used for the estimation.\n   */\n  function estimateRequestPrice(uint32 _callbackGasLimit, uint256 _requestGasPriceWei) external view returns (uint256);\n}\n",
+  "sourcePath": "@chainlink\\contracts\\src\\v0.8\\interfaces\\VRFV2WrapperInterface.sol",
+  "ast": {
+    "absolutePath": "@chainlink/contracts/src/v0.8/interfaces/VRFV2WrapperInterface.sol",
+    "exportedSymbols": {
+      "VRFV2WrapperInterface": [
+        224
+      ]
+    },
+    "id": 225,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 199,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "VRFV2WrapperInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 224,
+        "linearizedBaseContracts": [
+          224
+        ],
+        "name": "VRFV2WrapperInterface",
+        "nameLocation": "67:21:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 200,
+              "nodeType": "StructuredDocumentation",
+              "src": "93:187:2",
+              "text": " @return the request ID of the most recent VRF V2 request made by this wrapper. This should only\n be relied option within the same transaction that the request was made."
+            },
+            "functionSelector": "fc2a88c3",
+            "id": 205,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "lastRequestId",
+            "nameLocation": "292:13:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 201,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "305:2:2"
+            },
+            "returnParameters": {
+              "id": 204,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 203,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 205,
+                  "src": "331:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 202,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:9:2"
+            },
+            "scope": 224,
+            "src": "283:57:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 206,
+              "nodeType": "StructuredDocumentation",
+              "src": "344:411:2",
+              "text": " @notice Calculates the price of a VRF request with the given callbackGasLimit at the current\n @notice block.\n @dev This function relies on the transaction gas price which is not automatically set during\n @dev simulation. To estimate the price at a specific gas price, use the estimatePrice function.\n @param _callbackGasLimit is the gas limit used to estimate the price."
+            },
+            "functionSelector": "4306d354",
+            "id": 213,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateRequestPrice",
+            "nameLocation": "767:21:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 209,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 208,
+                  "mutability": "mutable",
+                  "name": "_callbackGasLimit",
+                  "nameLocation": "796:17:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 213,
+                  "src": "789:24:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 207,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "789:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "788:26:2"
+            },
+            "returnParameters": {
+              "id": 212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 211,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 213,
+                  "src": "838:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 210,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "838:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "837:9:2"
+            },
+            "scope": 224,
+            "src": "758:89:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 214,
+              "nodeType": "StructuredDocumentation",
+              "src": "851:380:2",
+              "text": " @notice Estimates the price of a VRF request with a specific gas limit and gas price.\n @dev This is a convenience function that can be called in simulation to better understand\n @dev pricing.\n @param _callbackGasLimit is the gas limit used to estimate the price.\n @param _requestGasPriceWei is the gas price in wei used for the estimation."
+            },
+            "functionSelector": "7fb5d19d",
+            "id": 223,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "estimateRequestPrice",
+            "nameLocation": "1243:20:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 216,
+                  "mutability": "mutable",
+                  "name": "_callbackGasLimit",
+                  "nameLocation": "1271:17:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 223,
+                  "src": "1264:24:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 215,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1264:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 218,
+                  "mutability": "mutable",
+                  "name": "_requestGasPriceWei",
+                  "nameLocation": "1298:19:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 223,
+                  "src": "1290:27:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 217,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1290:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1263:55:2"
+            },
+            "returnParameters": {
+              "id": 222,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 221,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 223,
+                  "src": "1342:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 220,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1342:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1341:9:2"
+            },
+            "scope": 224,
+            "src": "1234:117:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 225,
+        "src": "57:1296:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1322:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-05-14T10:05:40.356Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "calculateRequestPrice(uint32)": {
+        "details": "This function relies on the transaction gas price which is not automatically set duringsimulation. To estimate the price at a specific gas price, use the estimatePrice function.",
+        "params": {
+          "_callbackGasLimit": "is the gas limit used to estimate the price."
+        }
+      },
+      "estimateRequestPrice(uint32,uint256)": {
+        "details": "This is a convenience function that can be called in simulation to better understandpricing.",
+        "params": {
+          "_callbackGasLimit": "is the gas limit used to estimate the price.",
+          "_requestGasPriceWei": "is the gas price in wei used for the estimation."
+        }
+      },
+      "lastRequestId()": {
+        "returns": {
+          "_0": "the request ID of the most recent VRF V2 request made by this wrapper. This should only be relied option within the same transaction that the request was made."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "calculateRequestPrice(uint32)": {
+        "notice": "Calculates the price of a VRF request with the given callbackGasLimit at the currentblock."
+      },
+      "estimateRequestPrice(uint32,uint256)": {
+        "notice": "Estimates the price of a VRF request with a specific gas limit and gas price."
+      }
+    },
+    "version": 1
+  }
+}

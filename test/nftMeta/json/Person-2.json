@@ -1,0 +1,31 @@
+{
+  "description": "This is a Aadhaar-NFT once issued to a address it cannot be transferred and is used as a identification card in the web3 space.",
+  "image": "https://gateway.pinata.cloud/ipfs/QmbTp4n88Yjj931Gg4qz4LYLuCSdQwCv6sn5u8fzs16KsB",
+  "name": "Aadhaar-NFT",
+  "attributes": [
+    {
+      "detail_type": "Name",
+      "value": "XYZ"
+    },
+    {
+      "detail_type": "Address",
+      "value": "XYZ"
+    },
+    {
+      "detail_type": "Web3_Address",
+      "value": "XYZ"
+    },
+    {
+      "detail_type": "Aadhaar_No",
+      "value": "XYZ"
+    },
+    {
+      "detail_type": "DOB",
+      "value": "XYZ"
+    },
+    {
+      "detail_type": "SEX",
+      "value": "XYZ"
+    }
+  ]
+}

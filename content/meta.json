@@ -1,0 +1,61 @@
+[{
+  "description": "This is a Aadhaar-NFT once issued to a address it cannot be transferred and is used as a identification card in the web3 space.",
+  "image": "https://eincode.mypinata.cloud/ipfs/QmaQYCrX9Fg2kGijqapTYgpMXV7QPPzMwGrSRfV9TvTsfM/Creature_1.png",
+  "name": "Aadhaar NFT #1",
+  "attributes": [
+    {
+      "trait_type": "Name",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Address",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Web3_Address",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Aadhaar_No",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "DOB",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "SEX",
+      "value": "ABC"
+    }
+  ]
+},{
+  "description": "This is a Aadhaar-NFT once issued to a address it cannot be transferred and is used as a identification card in the web3 space.",
+  "image": "https://eincode.mypinata.cloud/ipfs/QmaQYCrX9Fg2kGijqapTYgpMXV7QPPzMwGrSRfV9TvTsfM/Creature_2.png",
+  "name": "Aadhaar NFT #2",
+  "attributes": [
+    {
+      "trait_type": "Name",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Address",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Web3_Address",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "Aadhaar_No",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "DOB",
+      "value": "ABC"
+    },
+    {
+      "trait_type": "SEX",
+      "value": "ABC"
+    }
+  ]
+}]
