@@ -22,7 +22,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Screenshot (9)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/015430a0-8cec-420f-8adf-5330b4cf222f)
+![Screenshot (1280)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/f5caa8e3-1dff-4c88-bed4-0a52892de0d4)
+
 
 
 About the Project:
@@ -83,17 +84,20 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 <!-- USAGE EXAMPLES -->
 ## ScreenShots
 
-![Screenshot (2)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/b00bc967-ee26-4c6d-8bc2-64c2d344311f)
+![Screenshot (1283)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/63576201-da14-4c64-a1d9-510da651cc9b)
 
-![Screenshot (3)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/4ec61b8b-f98e-405a-8f04-f16fe3914375)
+![Screenshot (1270)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/2b559390-d257-4bdd-b6a8-e61750b55b68)
 
-![Screenshot (4)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/095225b2-c90c-4aee-9864-73704c4c8833)
+![Screenshot (1273)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/94749ef2-f460-424e-8551-72ec9910867b)
 
-![Screenshot (6)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/395cc039-0728-4fbf-ab8a-256cc4301bb7)
+![Screenshot (1277)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/19bf8984-5338-418a-ba7d-01f25979d6ad)
 
-![Screenshot (7)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/17e05911-fec8-4779-9de9-2246b7f60ede)
+![Screenshot (1279)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/c03cffa2-f258-4757-9493-36956ae99e8e)
 
-![Screenshot (10)](https://github.com/aayushadoni/SoulBound-Aadhaar-NFT/assets/78133084/5c28f3d1-744f-4c87-855d-7979aa9f6685)
+![Screenshot (1280)](https://github.com/SARIF-MALIK/Block-Certify-/assets/96826281/c783efc9-7c14-4a57-9794-9f8ed2c63b51)
+
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
